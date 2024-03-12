@@ -1,6 +1,6 @@
 # My First Express Server
 
-In this assignment, you will be tasked with creating and deploying a simple Express server. The server will have four GET endpoints, two that serve HTML and two that serve raw data.
+In this assignment, you will be tasked with creating and deploying a simple Express server. The server will have four GET endpoints, two that serve HTML and two that serve raw data. One of those data endpoints will use query parameters.
 
 **Table of Contents**
 - [Short Responses](#short-responses)
@@ -34,8 +34,6 @@ This assignment has 12 tasks:
 - 1 deployment task
 
 You got this!
-
-
 
 ## Part 1 - Setup
 
@@ -73,7 +71,7 @@ Before continuing, make sure that these tasks are completed!
 
 Now it is time to write the server application! Refer to the [lecture notes](https://github.com/The-Marcy-Lab-School/8-0-0-intro-to-express) to build your Express server application.
 
-The server should have four GET endpoints, two that serve HTML and two that serve raw data. It is entirely up to *you* to decide the names of the endpoints your server makes available. However, the endpoints should follow the requirements below.
+The server should have four GET endpoints, two that serve HTML and two that serve raw data. One of those data endpoints will use query parameters. It is entirely up to *you* to decide the names of the endpoints your server makes available. However, the endpoints should follow the requirements below.
 
 As you build your server, visit http://localhost:8080 (or whatever port number you chose) and test out your server!
 
@@ -83,6 +81,7 @@ As you build your server, visit http://localhost:8080 (or whatever port number y
 - [ ] There are 4 controller functions
   - [ ] Two controllers send an HTML response (either raw HTML or an HTML file)
   - [ ] Two controllers send a data response
+  - [ ] One of the controllers uses query parameters in some way (`req.query.parameterName`)
 - [ ] There are 4 GET endpoints
   - [ ] Endpoints that provided data start with `/api` (ex: `/api/name` returns a name)
   - [ ] Endpoints that provide HTML start with `/` (ex: `/about` returns the about HTML page)
